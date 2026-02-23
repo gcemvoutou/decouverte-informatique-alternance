@@ -66,7 +66,7 @@ L'instantané est l'un des outils les plus puissants de la virtualisation.
 
 
 ### Repères sur l'interface (surlignés en jaune) :
-![Capture d'écran de l'interface VirtualBox](snapshot.png)
+![Capture d'écran de l'interface VirtualBox](images/snapshot.png)
 
 Sur la capture d'écran ci-dessus, on peut identifier les trois éléments clés pour gérer ses sauvegardes :
 
