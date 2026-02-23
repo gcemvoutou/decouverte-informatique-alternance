@@ -39,6 +39,7 @@ Lors de la création de la VM, j'ai dû configurer les ressources suivantes :
 > - **Contrainte > 3 Go :** En allouant 4 Go ou plus, je risque de saturer les 8 Go de mon PC, ce qui peut faire planter VirtualBox ou Windows.
 
 * **Stockage :** Création d'un disque dur virtuel dynamique (VDI) de 25 Go.
+![Disque VDI opérationnel](images/config_disque.png)
 
 ### Les types d'accès réseau
 C'est un point crucial pour la communication de la machine :
