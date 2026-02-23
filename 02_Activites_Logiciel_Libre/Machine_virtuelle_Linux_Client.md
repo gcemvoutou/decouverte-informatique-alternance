@@ -17,7 +17,31 @@ Avant l'installation, il est important de comprendre l'écosystème Linux en ent
 ---
 
 ## 🛠️ 2. Installation et Configuration
-*Note : Pour cette partie, j'utilise un système de fichiers **ext4** et un partitionnement standard.*
+## Configuration du stockage : Système de fichiers et Partitionnement
+
+Avant de lancer l'installation, il est essentiel de configurer la manière dont Ubuntu va occuper l'espace sur le disque dur virtuel.
+
+### Introduction aux concepts
+- **Le système de fichiers :** C'est la structure logique qui permet à l'OS d'organiser, de stocker et de retrouver les fichiers sur le disque. Sans lui, le disque ne serait qu'une suite de données illisibles.
+- **Le partitionnement :** Cela consiste à diviser le disque dur physique (ou virtuel) en plusieurs parties isolées, appelées "partitions". Cela permet de séparer, par exemple, le système d'exploitation des données personnelles ou de créer une zone de secours.
+
+---
+
+### Quel système de fichiers privilégier ?
+Pour une installation Ubuntu moderne, le système de fichiers à privilégier est l'**ext4** (*fourth extended filesystem*).
+
+**Pourquoi ce choix ?**
+- **La Journalisation :** C'est sa fonctionnalité principale. Le système écrit chaque modification dans un "journal" avant de l'appliquer. En cas de coupure de courant, Linux lit ce journal pour réparer les erreurs éventuelles, ce qui évite la perte de données.
+- **Performance et Stabilité :** C'est le standard sous Linux. Il gère très bien les gros volumes de données et limite la fragmentation des fichiers (contrairement au NTFS sous Windows).
+
+### Quel partitionnement des disques ?
+Pour cette machine virtuelle, j'ai opté pour un **partitionnement assisté sur l'intégralité du disque**.
+
+Ce choix permet au programme d'installation de créer automatiquement les zones nécessaires :
+1. **La Racine (`/`) :** La partition principale où sont installés l'OS et les logiciels.
+2. **Le Swap (Espace d'échange) :** Une partition spéciale qui sert de "prolongement" à la mémoire RAM. Si la mémoire vive est saturée, le système utilise cet espace disque pour éviter que l'ordinateur ne se fige.
+
+> **Note :** Dans un environnement de production plus complexe, on aurait pu créer une partition `/home` séparée pour isoler les données utilisateurs du système, mais pour ce TP de découverte, le partitionnement standard est le plus efficace.
 
 > **[IMAGE ICI : Capture de l'écran d'installation d'Ubuntu]**
 
