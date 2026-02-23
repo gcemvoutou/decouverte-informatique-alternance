@@ -51,7 +51,7 @@ Lors de la création de la VM, j'ai dû configurer les ressources suivantes :
 ### Les types d'accès réseau
 Le choix du mode réseau détermine comment la machine virtuelle communique avec le monde extérieur :
 
-![Menu de configuration réseau VirtualBox](images/image_c71d41.png)
+![Menu de configuration réseau VirtualBox](images/config_réseau.png)
 
 * **NAT (Network Address Translation) :** La VM accède à Internet via l'hôte, mais elle est invisible de l'extérieur. C'est le réglage par défaut que j'ai conservé pour cette installation.
 * **Accès par pont (Bridge) :** La VM est considérée comme une machine réelle sur le réseau local et possède sa propre adresse IP, comme mon PC physique.
@@ -64,4 +64,12 @@ L'instantané est l'un des outils les plus puissants de la virtualisation.
 * **C'est quoi ?** C'est une "photo" de l'état de la machine virtuelle (fichiers, réglages, mémoire) à un instant T.
 * **Pourquoi l'utiliser ?** Avant de faire une manipulation risquée ou une installation complexe, on prend un instantané. Si le système plante ou si l'on fait une erreur, on peut revenir à l'état exact de l'instantané en quelques secondes. C'est un "droit à l'erreur" permanent.
 
-> **[📷 ICI : Capture d'écran de l'interface VirtualBox avec ma VM créée]**
+
+### Repères sur l'interface (surlignés en jaune) :
+![Capture d'écran de l'interface VirtualBox](snapshot.png)
+
+Sur la capture d'écran ci-dessus, on peut identifier les trois éléments clés pour gérer ses sauvegardes :
+
+1.  **L'endroit pour faire un snapshot :** Le bouton **"Prendre"** situé en haut à gauche de la barre d'outils.
+2.  **Le nom du snapshot :** Ici nommé **"Instantané 1"**. On remarque juste en dessous la mention *"État actuel (modifié)"*, ce qui prouve que des changements ont eu lieu depuis la capture.
+3.  **Le moment (date) :** À droite, la colonne **"Pris"** indique précisément quand la photo a été prise (le **23/02/2026 à 12:27**), permettant de se situer dans le temps.
