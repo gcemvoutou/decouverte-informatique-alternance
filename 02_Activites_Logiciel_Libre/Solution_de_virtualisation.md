@@ -14,7 +14,11 @@ Il existe plusieurs solutions professionnelles pour gérer la virtualisation :
 
 ## 2. Mise en place de VirtualBox
 Pour mon environnement d'apprentissage, j'ai installé VirtualBox. C'est un hyperviseur de type 2 (il s'installe comme un logiciel sur mon système Windows).
+### Création et identité de la machine virtuelle
 
+![Identité de la VM](images/identite_vm_ubuntu.png.png)
+> [!NOTE]
+> Pour installer Ubuntu, j'ai d'abord configuré l'identité de la machine dans VirtualBox. J'ai nommé la VM "Ubuntu" et sélectionné le type "Linux" avec la version "Ubuntu (64-bit)".
 
 ### Réglages principaux de la machine virtuelle
 Lors de la création de la VM, j'ai dû configurer les ressources suivantes :
