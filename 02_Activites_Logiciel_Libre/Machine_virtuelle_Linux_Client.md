@@ -12,8 +12,8 @@ Avant l'installation, il est important de comprendre l'écosystème Linux en ent
 - **Ubuntu Server :** Contrairement à la version Desktop, elle est dépourvue d'interface graphique et s'utilise exclusivement en ligne de commande. Cette approche permet d'optimiser les ressources système (RAM et CPU) en supprimant la charge liée à l'affichage visuel.
 
 ### Qu'apporte les versions labellisées LTS ?
+ En entreprise, ce label est crucial car il garantit un support technique et des mises à jour de sécurité critiques sur une période de 5 ans. C'est le choix de la stabilité et de la pérennité pour un parc informatique.
 
-En entreprise, ce label est crucial car il garantit un support technique et des mises à jour de sécurité critiques sur une période de 5 ans. C'est le choix de la stabilité et de la pérennité pour un parc informatique.
 ---
 
 ## 🛠️ 2. Installation et Configuration
