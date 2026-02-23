@@ -23,7 +23,12 @@ Pour mon environnement d'apprentissage, j'ai installé VirtualBox. C'est un hype
 ### Réglages principaux de la machine virtuelle
 Lors de la création de la VM, j'ai dû configurer les ressources suivantes :
 * **Processeur :** Allocation de 2 cœurs pour assurer la fluidité.
-* **Mémoire vive (RAM) :** 3 Go (pour laisser assez de mémoire à Windows tout en permettant à Ubuntu de bien tourner).
+<br>
+
+![Configuration du processeur dans VirtualBox](images/config-processeur.png)
+
+* **Mémoire vive (RAM) :** 3072 Mo (3 Go). (pour laisser assez de mémoire à Windows tout en permettant à Ubuntu de bien tourner).
+* 
 * **Stockage :** Création d'un disque dur virtuel dynamique (VDI) de 25 Go.
 
 ### Les types d'accès réseau
