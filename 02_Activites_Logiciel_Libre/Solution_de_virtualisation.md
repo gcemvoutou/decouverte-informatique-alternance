@@ -39,14 +39,23 @@ Lors de la création de la VM, j'ai dû configurer les ressources suivantes :
 > - **Contrainte > 3 Go :** En allouant 4 Go ou plus, je risque de saturer les 8 Go de mon PC, ce qui peut faire planter VirtualBox ou Windows.
 
 * **Stockage :** Création d'un disque dur virtuel dynamique (VDI) de 25 Go.
+<br>
+
 ![Disque VDI opérationnel](images/config_disque.png)
 
-### Les types d'accès réseau
-C'est un point crucial pour la communication de la machine :
-* **NAT (Network Address Translation) :** La VM accède à Internet via l'hôte, mais elle est invisible de l'extérieur. C'est le réglage par défaut.
-* **Accès par pont (Bridge) :** La VM est considérée comme une machine réelle sur le réseau local (elle a sa propre adresse IP comme mon PC).
-* **Réseau privé hôte :** Permet de faire communiquer la VM uniquement avec mon PC Windows, sans accès Internet.
+> [!NOTE]
+> J'ai configuré un disque au format **VDI** avec une **allocation dynamique**. 
+> - **État final :** Le fichier `Ubuntu.vdi` est correctement rattaché au contrôleur SATA.
+> - **Optimisation :** Ce mode permet de ne consommer que l'espace disque réellement utilisé par Ubuntu sur mon système hôte, tout en garantissant une capacité maximale de 25 Go.
 
+### Les types d'accès réseau
+Le choix du mode réseau détermine comment la machine virtuelle communique avec le monde extérieur :
+
+![Menu de configuration réseau VirtualBox](images/image_c71d41.png)
+
+* **NAT (Network Address Translation) :** La VM accède à Internet via l'hôte, mais elle est invisible de l'extérieur. C'est le réglage par défaut que j'ai conservé pour cette installation.
+* **Accès par pont (Bridge) :** La VM est considérée comme une machine réelle sur le réseau local et possède sa propre adresse IP, comme mon PC physique.
+* **Réseau privé hôte :** Permet de faire communiquer la VM uniquement avec mon PC Windows, sans accès Internet.
 ---
 
 ## 3. L'intérêt d'un "Instantané" (Snapshot)
