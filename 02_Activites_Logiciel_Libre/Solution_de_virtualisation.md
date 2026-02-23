@@ -28,7 +28,16 @@ Lors de la création de la VM, j'ai dû configurer les ressources suivantes :
 ![Configuration du processeur dans VirtualBox](images/config-processeur.png)
 
 * **Mémoire vive (RAM) :** 3072 Mo (3 Go). (pour laisser assez de mémoire à Windows tout en permettant à Ubuntu de bien tourner).
-* 
+<br>
+
+![Réglage de la RAM](images/config_ram.png)
+
+> [!IMPORTANT]
+> **Justification du choix de 3 Go :**
+> - **Fluidité :** C'est le "juste milieu" pour qu'Ubuntu soit rapide sans ralentir Windows.
+> - **Contrainte < 3 Go :** Le système Ubuntu risque d'être lent et de saccader.
+> - **Contrainte > 3 Go :** En allouant 4 Go ou plus, je risque de saturer les 8 Go de mon PC, ce qui peut faire planter VirtualBox ou Windows.
+
 * **Stockage :** Création d'un disque dur virtuel dynamique (VDI) de 25 Go.
 
 ### Les types d'accès réseau
